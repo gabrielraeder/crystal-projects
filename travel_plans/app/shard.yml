@@ -1,0 +1,34 @@
+name: app
+version: 0.1.0
+
+authors:
+  - Gabriel Goncalves <gabrielraeder@outlook.com.br>
+
+targets:
+  app:
+    main: src/app.cr
+
+crystal: 1.8.2
+
+license: MIT
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+
+  granite:
+    github: amberframework/granite
+    version: ~> 0.23.1
+
+  mysql:
+    github: crystal-lang/crystal-mysql
+    version: ~> 0.13.0
+
+
+development_dependencies:
+  garnet_spec:
+    github: amberframework/garnet-spec
+    version: 0.4.1
+  ameba:
+    github: crystal-ameba/ameba
+    version: ~> 0.13.4

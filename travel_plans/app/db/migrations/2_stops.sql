@@ -1,0 +1,11 @@
+-- +micrate Up
+CREATE TABLE stops (
+  id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  stop_id BIGINT NOT NULL,
+  travel_id BIGINT NOT NULL,
+  FOREIGN KEY (travel_id) REFERENCES travels(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+
+-- +micrate Down
+DROP TABLE IF EXISTS stops;
