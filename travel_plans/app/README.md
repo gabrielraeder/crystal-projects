@@ -45,12 +45,12 @@ The Project Name project utilizes the following tools and languages:
 </summary>
 <hr>
 
-`GET /travel_plans`: Retrieves a list of planned travels.
+**`GET /travel_plans`**: Retrieves a list of planned travels.
 <details>
 <summary> Response
 </summary>
 
-- status 200 - Ok
+- *status* **200 - Ok**
 
 ```sh
 [
@@ -68,12 +68,12 @@ The Project Name project utilizes the following tools and languages:
 </details>
 <hr>
 
-`GET /travel_plans/:id`: Retrieves one planned travel based on it's Id.
+**`GET /travel_plans/:id`**: Retrieves one planned travel based on it's Id.
 <details>
 <summary> Response
 </summary>
 
-- status 200 - Ok
+- *status* **200 - Ok**
 
 ```sh
   {
@@ -85,7 +85,7 @@ The Project Name project utilizes the following tools and languages:
 </details>
 <hr>
 
-`POST /travel_plans`:  Creates a new travel plan.
+**`POST /travel_plans`**:  Creates a new travel plan.
 <details>
 <summary> Requisition
 </summary>
@@ -101,7 +101,7 @@ The Project Name project utilizes the following tools and languages:
 <summary> Response
 </summary>
 
-- status 201 - Created
+- *status* **201 - Created**
 
 ```sh
   {
@@ -113,7 +113,7 @@ The Project Name project utilizes the following tools and languages:
 </details>
 <hr>
 
-`PUT /travel_plans/:id`:  Updates the travel stops from a travel plan.
+**`PUT /travel_plans/:id`**:  Updates the travel stops from a travel plan.
 <details>
 <summary> Requisition
 </summary>
@@ -129,7 +129,7 @@ The Project Name project utilizes the following tools and languages:
 <summary> Response
 </summary>
 
-- status 200 - Ok
+- *status* **200 - Ok**
 
 ```sh
   {
@@ -141,7 +141,7 @@ The Project Name project utilizes the following tools and languages:
 </details>
 <hr>
 
-`PATCH /travel_plans/:id/append`:  Adds stops to an existing travel plan.
+**`PATCH /travel_plans/:id/append`**:  Adds stops to an existing travel plan.
 <details>
 <summary> Requisition
 </summary>
@@ -157,7 +157,7 @@ The Project Name project utilizes the following tools and languages:
 <summary> Response
 </summary>
 
-- status 200 - Ok
+- *status* **200 - Ok**
 
 ```sh
   {
@@ -169,16 +169,15 @@ The Project Name project utilizes the following tools and languages:
 </details>
 <hr>
 
-`DELETE /travel_plans/:id`:  Deletes a travel plan.
+**`DELETE /travel_plans/:id`**:  Deletes a travel plan.
 <details>
 <summary> Response
 </summary>
 
-- status 204 - No Content
+- *status* **204 - No Content**
 </details>
 <hr>
 </details>
-
 
 ## Contributors
 
