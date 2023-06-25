@@ -49,6 +49,7 @@ The Project Name project utilizes the following tools and languages:
 <details>
 <summary> Response
 </summary>
+
 - status 200 - Ok
 
 ```sh
@@ -71,6 +72,7 @@ The Project Name project utilizes the following tools and languages:
 <details>
 <summary> Response
 </summary>
+
 - status 200 - Ok
 
 ```sh
@@ -98,6 +100,7 @@ The Project Name project utilizes the following tools and languages:
 <details>
 <summary> Response
 </summary>
+
 - status 201 - Created
 
 ```sh
@@ -125,6 +128,7 @@ The Project Name project utilizes the following tools and languages:
 <details>
 <summary> Response
 </summary>
+
 - status 200 - Ok
 
 ```sh
@@ -152,6 +156,7 @@ The Project Name project utilizes the following tools and languages:
 <details>
 <summary> Response
 </summary>
+
 - status 200 - Ok
 
 ```sh
@@ -168,6 +173,7 @@ The Project Name project utilizes the following tools and languages:
 <details>
 <summary> Response
 </summary>
+
 - status 204 - No Content
 </details>
 <hr>
