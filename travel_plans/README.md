@@ -52,7 +52,7 @@ The Project Name project utilizes the following tools and languages:
 
 - *status* **200 - Ok**
 
-```sh
+```json
 [
   {
     "id": 1,
@@ -68,6 +68,81 @@ The Project Name project utilizes the following tools and languages:
 </details>
 <hr>
 
+**`GET /travel_plans?expand=true`**: Retrieves a list of planned travels with expanded information.
+<details>
+<summary> Response
+</summary>
+
+- *status* **200 - Ok**
+
+```json
+[
+  {
+    "id": 1,
+    "travel_stops": [
+      {
+        "id": 1,
+        "name": "Earth (C-137)",
+        "type": "Planet",
+        "dimension": "Dimension C-137"
+      },
+      {
+        "id": 2,
+        "name": "Abadango",
+        "type": "Cluster",
+        "dimension": "unknown"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "travel_stops": [
+      {
+        "id": 3,
+        "name": "Citadel of Ricks",
+        "type": "Space station",
+        "dimension": "unknown"
+      }
+    ]
+  },
+  ...
+]
+```
+</details>
+<hr>
+
+**`GET /travel_plans?expand=optimize`**: Retrieves a list of planned travels with optimized travel route.
+<details>
+<summary> Response
+</summary>
+
+- *status* **200 - Ok**
+
+```json
+[
+  {
+    "id": 1,
+    "travel_stops": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": 2,
+    "travel_stops": [
+      19,
+      9,
+      2,
+      11,
+      7
+    ]
+  },
+  ...
+]
+```
+</details>
+<hr>
+
 **`GET /travel_plans/:id`**: Retrieves one planned travel based on it's Id.
 <details>
 <summary> Response
@@ -75,7 +150,7 @@ The Project Name project utilizes the following tools and languages:
 
 - *status* **200 - Ok**
 
-```sh
+```json
   {
     "id": 1,
     "travel_stops": [1, 2, 3]
@@ -85,12 +160,59 @@ The Project Name project utilizes the following tools and languages:
 </details>
 <hr>
 
+**`GET /travel_plans/:id?optimize=true&expand=true`**: Retrieves one planned travel with expanded information and optimized route.
+<details>
+<summary> Response
+</summary>
+
+- *status* **200 - Ok**
+
+```json
+{
+  "id": 2,
+  "travel_stops": [
+    {
+      "id": 19,
+      "name": "Gromflom Prime",
+      "type": "Planet",
+      "dimension": "Replacement Dimension"
+    },
+    {
+      "id": 9,
+      "name": "Purge Planet",
+      "type": "Planet",
+      "dimension": "Replacement Dimension"
+    },
+    {
+      "id": 2,
+      "name": "Abadango",
+      "type": "Cluster",
+      "dimension": "unknown"
+    },
+    {
+      "id": 11,
+      "name": "Bepis 9",
+      "type": "Planet",
+      "dimension": "unknown"
+    },
+    {
+      "id": 7,
+      "name": "Immortality Field Resort",
+      "type": "Resort",
+      "dimension": "unknown"
+    }
+  ]
+}
+```
+</details>
+<hr>
+
 **`POST /travel_plans`**:  Creates a new travel plan.
 <details>
 <summary> Requisition
 </summary>
 
-```sh
+```json
   {
     "travel_stops": [7, 8]
   }
@@ -103,7 +225,7 @@ The Project Name project utilizes the following tools and languages:
 
 - *status* **201 - Created**
 
-```sh
+```json
   {
     "id": 3,
     "travel_stops": [7, 8]
@@ -118,7 +240,7 @@ The Project Name project utilizes the following tools and languages:
 <summary> Requisition
 </summary>
 
-```sh
+```json
   {
     "travel_stops": [9, 10]
   }
@@ -131,7 +253,7 @@ The Project Name project utilizes the following tools and languages:
 
 - *status* **200 - Ok**
 
-```sh
+```json
   {
     "id": 3,
     "travel_stops": [9, 10]
@@ -146,7 +268,7 @@ The Project Name project utilizes the following tools and languages:
 <summary> Requisition
 </summary>
 
-```sh
+```json
   {
     "travel_stops": [11, 12]
   }
@@ -159,7 +281,7 @@ The Project Name project utilizes the following tools and languages:
 
 - *status* **200 - Ok**
 
-```sh
+```json
   {
     "id": 3,
     "travel_stops": [9, 10, 11, 12]
