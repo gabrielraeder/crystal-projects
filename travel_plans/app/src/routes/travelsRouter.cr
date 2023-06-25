@@ -1,4 +1,4 @@
-before_all do |env|
+before_all ["/travel_plans", "/travel_plans/:id", "/travel_plans/:id/append"] do |env|
   env.response.content_type = "application/json"
 end
 
