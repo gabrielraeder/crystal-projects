@@ -36,7 +36,7 @@ The Project Name project utilizes the following tools and languages:
 </summary>
 
 - HomePage
-![HomePage](./images/frontend_homepage.png.jpg)
+![HomePage](./images/frontend_homepage.png)
 </details>
 
 ## API documentation
